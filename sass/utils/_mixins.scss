@@ -1,0 +1,15 @@
+@mixin boxshadow {
+    box-shadow: 0 0 10px #2d3035;
+    position: relative;
+    
+}
+
+@mixin litegreybackground {
+    background-color: $litegrey;
+    
+}
+
+@mixin greybackground {
+    background-color: $grey;
+    
+}

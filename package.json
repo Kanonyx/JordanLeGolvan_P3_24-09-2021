@@ -6,6 +6,14 @@
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./style.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kanonyx/JordanLeGolvan_P5_24-09-2021-.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kanonyx/JordanLeGolvan_P5_24-09-2021-/issues"
+  },
+  "homepage": "https://github.com/Kanonyx/JordanLeGolvan_P5_24-09-2021-#readme"
 }
