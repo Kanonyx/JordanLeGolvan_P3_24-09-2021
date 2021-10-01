@@ -15,7 +15,7 @@ i {
 }
 
 strong {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 header {
@@ -29,7 +29,7 @@ header {
   padding: 1rem;
   display: flex;
   justify-content: center;
-  @include greybackground;
+  @include backgroundcolor($grey);
 }
 
 .explor {
@@ -39,7 +39,7 @@ header {
   gap: 1rem;
   justify-content: center;
   text-align: center;
-  @include litegreybackground;
+  @include backgroundcolor;
   font-weight: lighter;
   align-items: center;
 }
@@ -55,6 +55,47 @@ header {
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
-  padding-right: 2.5rem;
+  padding-right: 2.5;
   padding-top: 2rem;
 }
+
+
+.restau{
+  @include backgroundcolor;
+   padding: 1.5rem;
+}
+
+.restau__title{
+  padding: 1.5rem;
+}
+
+.filter__subtitle{
+  padding: 1.5rem;
+}
+
+.restau__card {
+  
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-width: 13rem;
+  flex-basis: 25%;
+  transition-duration: 0.2s;
+}
+
+.whitespace {
+  padding: 0 02rem;
+}
+
+.restau__card--img img {
+  border-radius: 1rem 1rem 0 0;
+  height: 12rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+
+

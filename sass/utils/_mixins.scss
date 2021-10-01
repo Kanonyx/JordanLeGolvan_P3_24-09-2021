@@ -4,12 +4,8 @@
     
 }
 
-@mixin litegreybackground {
-    background-color: $litegrey;
+@mixin backgroundcolor($color:$lightgrey) {
+    background-color: $color;
     
 }
 
-@mixin greybackground {
-    background-color: $grey;
-    
-}
