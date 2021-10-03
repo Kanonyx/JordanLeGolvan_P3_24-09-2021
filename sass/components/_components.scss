@@ -6,11 +6,7 @@
   border-radius: 100px;
   color: #fff;
   background-color: #686868;
-  background-image: linear-gradient(
-    0deg,
-    rgba(147, 86, 220, 0.9),
-    rgba(255, 121, 218, 0.9)
-  );
+  @include backgroundgradient;
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
@@ -46,7 +42,7 @@ li {
   justify-content: center;
   &::before {
     content: counter(item);
-    background: #9356dc;
+    @include backgroundgradient;
     border-radius: 100%;
     color: white;
     padding: 0.3rem;
@@ -66,8 +62,6 @@ li {
   }
 }
 
-
-
 .card {
   background-color: #fff;
   border-radius: 1rem;
@@ -84,4 +78,83 @@ li {
   border-radius: 1rem 1rem 0 0;
   box-shadow: none;
   object-fit: cover;
+}
+
+.restau__card {
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-width: 13rem;
+  flex-basis: 25%;
+  transition-duration: 0.7s;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.restau__card--img img {
+  border-radius: 1rem 1rem 0 0;
+  height: 12rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card__text {
+  display: flex;
+  padding: 0.9rem;
+
+  &--title {
+    flex-basis: 90%;
+  }
+  &--heart {
+    flex-basis: 10%;
+    padding-top: 0.3rem;
+
+    & .full {
+      display: none;
+      font-size: 30px;
+    }
+    & .empty {
+      font-size: 30px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      & .full {
+        display: inherit;
+        background: -moz-linear-gradient(
+          top,
+          rgba(255, 121, 218, 0.9),
+          rgba(147, 86, 220, 0.9)
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(255, 121, 218, 0.9),
+          rgba(147, 86, 220, 0.9)
+        );
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 121, 218, 0.9),
+          rgba(147, 86, 220, 0.9)
+        );
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      & .empty {
+        display: none;
+      }
+    }
+  }
+}
+
+.footer__logo {
+  font-family: "shrikhand";
+  font-size: 30px;
+  background-color:red;
 }

@@ -59,43 +59,35 @@ header {
   padding-top: 2rem;
 }
 
-
-.restau{
+.restau {
   @include backgroundcolor;
-   padding: 1.5rem;
-}
-
-.restau__title{
   padding: 1.5rem;
 }
 
-.filter__subtitle{
+.restau__title {
   padding: 1.5rem;
 }
 
-.restau__card {
-  
-  box-shadow: 0 0 16px #0000002e;
-  border-radius: 1rem;
-  background-color: white;
+.filter__subtitle {
+  padding: 1.5rem;
+}
+
+.restau__card--area {
   display: flex;
   flex-direction: column;
-  min-width: 13rem;
-  flex-basis: 25%;
-  transition-duration: 0.2s;
+  gap: 2rem;
 }
 
-.whitespace {
-  padding: 0 02rem;
+footer {
+  background-color: #353535;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding:1rem;
+  & p {
+    font-family: "shrikhand";
+    font-size: 20px;
+  }
 }
-
-.restau__card--img img {
-  border-radius: 1rem 1rem 0 0;
-  height: 12rem;
-  object-fit: cover;
-  width: 100%;
-}
-
-
-
 
