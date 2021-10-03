@@ -27,12 +27,16 @@
   background-color: #f1f1f1;
 }
 
+.filter__list {
+  margin-left: -2rem;
+  padding-bottom: 2rem;
+}
+
 ol {
   list-style: none;
   counter-reset: item;
-  padding-inline-start: none;
-  margin-block-start: none;
-  margin-block-end: none;
+  justify-content: center;
+  margin-left: -5rem;
 }
 
 li {
@@ -51,7 +55,7 @@ li::before {
   text-align: center;
   display: inline-block;
   position: absolute;
-  left: 3rem;
+  left: 1rem;
 }
 li:hover {
   cursor: pointer;
@@ -174,7 +178,7 @@ header {
   padding: 1rem;
   display: flex;
   justify-content: center;
-  background-color: #eeecec;
+  background-color: #dfdddd;
 }
 
 .explor {
@@ -200,20 +204,12 @@ header {
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
-  padding-right: 2.5;
+  margin-left: 0;
   padding-top: 2rem;
 }
 
 .restau {
   background-color: #f1f1f1;
-  padding: 1.5rem;
-}
-
-.restau__title {
-  padding: 1.5rem;
-}
-
-.filter__subtitle {
   padding: 1.5rem;
 }
 

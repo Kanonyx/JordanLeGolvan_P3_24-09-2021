@@ -50,13 +50,16 @@ header {
   flex-direction: column;
 }
 
+
+
 .filter__btn--list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
-  padding-right: 2.5;
+  margin-left: 0;
   padding-top: 2rem;
+  
 }
 
 .restau {
@@ -64,13 +67,9 @@ header {
   padding: 1.5rem;
 }
 
-.restau__title {
-  padding: 1.5rem;
-}
 
-.filter__subtitle {
-  padding: 1.5rem;
-}
+
+
 
 .restau__card--area {
   display: flex;
