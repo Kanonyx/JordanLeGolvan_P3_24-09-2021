@@ -14,7 +14,7 @@
   &:hover {
     transform: scale(1.02);
     cursor: pointer;
-    transition-duration: 0.2s;
+    transition-duration: 0.7s;
   }
 }
 
@@ -47,6 +47,7 @@ li {
   text-align: center;
   align-items: center;
   justify-content: center;
+  
   &::before {
     content: counter(item);
     @include backgroundgradient;
@@ -61,10 +62,11 @@ li {
   }
   &:hover {
     cursor: pointer;
-    transition-duration: 0.2s;
+    transition-duration: 0.9s;
     background: #f0e4ff;
     & i {
       color: #9356dc;
+      transition-duration: 0.9s;
     }
   }
 }
@@ -160,8 +162,3 @@ li {
   }
 }
 
-.footer__logo {
-  font-family: "shrikhand";
-  font-size: 30px;
-  background-color:red;
-}
