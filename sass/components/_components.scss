@@ -167,7 +167,21 @@ li {
   background-color: #fff;
     padding: 1rem;
     display: flex;
+    justify-content:space-between;
     border-radius: .75rem; 
     box-shadow: 0.25rem 0.25rem 1rem rgb(88, 88, 88);
+    overflow: hidden;
+    cursor: pointer;
+    animation: itemAppear .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    max-width: 100%;
+   
 }
 
+ .item__zone{
+      display: flex;
+      justify-content:space-between;
+      background-color: #9356dc;
+    }
