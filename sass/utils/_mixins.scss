@@ -16,4 +16,10 @@
     rgba(255, 121, 218, 0.9)
   );
 }
+@-webkit-keyframes slide {
+    100% { right: 0; }
+}
 
+@keyframes slide {
+    100% { right: 0; }
+}
