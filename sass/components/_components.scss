@@ -164,6 +164,11 @@ li {
     & .text__area--side {
       transform: translateX(-100%);
     }
+    & .text__area--check i{
+      transform: rotate(-0deg);
+      transition-duration: 0.6s;
+
+    }
   }
 }
 
@@ -189,6 +194,8 @@ li {
 
     & i {
       padding: 0.2rem;
+      transform: rotate(90deg);
+      transition-duration: 0.6s;
     }
   }
   &--price {
