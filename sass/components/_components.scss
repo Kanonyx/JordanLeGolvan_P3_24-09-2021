@@ -185,7 +185,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
   }
   &--check {
     color: #99e2d0;
@@ -194,8 +194,8 @@ li {
 
     & i {
       padding: 0.2rem;
-      transform: rotate(90deg);
-      transition-duration: 0.6s;
+      transform: rotate(180deg);
+      transition-duration: 0.4s;
     }
   }
   &--price {
