@@ -141,11 +141,8 @@ li:hover i {
 }
 .card__text--heart:active .full {
   display: inherit;
-  background: -moz-linear-gradient(top, rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
-  background: -webkit-linear-gradient(top, rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
   background: linear-gradient(to bottom, rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -163,14 +160,36 @@ li:hover i {
   overflow: hidden;
   cursor: pointer;
 }
+.item:hover .text__area--side {
+  transform: translateX(-100%);
+}
 
 .text__area--side {
   display: flex;
   padding-top: 0.6rem;
+  transition: transform 300ms;
+}
+.text__area--checkzone {
+  background-color: #99e2d0;
+  margin: -1.6rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
 }
 .text__area--check {
-  background-color: #99E2D0;
+  color: #99e2d0;
+  background-color: white;
+  border-radius: 100%;
 }
+.text__area--check i {
+  padding: 0.2rem;
+}
+.text__area--price {
+  padding: 0rem 1rem;
+}
+
 body {
   margin: 0 auto;
   max-width: 2440px;
