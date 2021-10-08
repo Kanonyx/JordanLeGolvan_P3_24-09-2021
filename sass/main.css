@@ -1,13 +1,3 @@
-@-webkit-keyframes slide {
-  100% {
-    right: 0;
-  }
-}
-@keyframes slide {
-  100% {
-    right: 0;
-  }
-}
 .explor__btn {
   border: 0;
   padding: 0.75rem 1.5rem;
@@ -35,6 +25,9 @@
   background-color: #f6f6f6;
   display: flex;
   background-color: #f1f1f1;
+}
+.filter__btn.fas i {
+  padding: 0.5rem;
 }
 
 .filter__list {
@@ -97,7 +90,7 @@ li:hover i {
 }
 
 .restau__card {
-  box-shadow: 0 0 16px #0000002e;
+  box-shadow: 0 0 8px #c2c1c12e;
   border-radius: 1rem;
   background-color: white;
   display: flex;
@@ -109,7 +102,6 @@ li:hover i {
 .restau__card:hover {
   transform: scale(1.02);
 }
-
 .restau__card--img img {
   border-radius: 1rem 1rem 0 0;
   height: 12rem;
@@ -127,7 +119,7 @@ li:hover i {
 }
 .card__text--heart {
   flex-basis: 10%;
-  padding-top: 0.3rem;
+  padding: 0.3rem 1rem;
 }
 .card__text--heart .full {
   display: none;
@@ -143,7 +135,6 @@ li:hover i {
   display: inherit;
   background: linear-gradient(to bottom, rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -157,34 +148,54 @@ li:hover i {
   display: flex;
   justify-content: space-between;
   border-radius: 0.75rem;
-  box-shadow: 0.25rem 0.25rem 1rem #585858;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.3);
   overflow: hidden;
   cursor: pointer;
 }
+.item:hover .text__area--side {
+  transform: translateX(-100%);
+}
+.item:hover .text__area--check i {
+  transform: rotate(0deg);
+  transition-duration: 0.6s;
+}
 
+.text__area {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .text__area--side {
   display: flex;
   padding-top: 0.6rem;
+  transition: transform 300ms;
+}
+.text__area--checkzone {
+  background-color: #99e2d0;
+  margin: -1.6rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.3s;
 }
 .text__area--check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  width: 50px;
-  height: 63px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  position: absolute;
-  padding: 20px;
-  right: -50px;
-  top: 0;
-  opacity: 0;
-  transition: transform 330ms ease-in-out;
+  color: #99e2d0;
+  background-color: white;
+  border-radius: 100%;
 }
 .text__area--check i {
-  color: #fff;
-  transition: transform 500ms ease-in-out;
+  padding: 0.2rem;
+  transform: rotate(180deg);
+  transition-duration: 0.3s;
+}
+.text__area--price {
+  padding: 0rem 1rem;
+  background-color: white;
+  margin: -1.5rem -1rem -1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -197,10 +208,6 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-i {
-  padding: 0 1rem 0 0;
 }
 
 strong {
@@ -240,6 +247,9 @@ strong {
   justify-content: center;
   background-color: #dfdddd;
 }
+.localisation i {
+  padding: 0 0.5rem;
+}
 
 .explor {
   padding: 3rem 1rem;
@@ -267,6 +277,9 @@ strong {
   margin-left: 0;
   padding-top: 2rem;
 }
+.filter__btn--list i {
+  padding: 0.5rem;
+}
 
 .restau {
   background-color: #f1f1f1;
@@ -290,6 +303,18 @@ footer {
 footer p {
   font-family: "shrikhand";
   font-size: 20px;
+}
+
+.menu__slot {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menu_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .main__picture img {

@@ -1,25 +1,25 @@
 @mixin boxshadow {
-    box-shadow: 0 0 10px #2d3035;
-    position: relative;
-    
+  box-shadow: 0 0 10px #2d3035;
+  position: relative;
 }
 
-@mixin backgroundcolor($color:$lightgrey) {
-    background-color: $color;
-    
+@mixin backgroundcolor($color: $lightgrey) {
+  background-color: $color;
 }
 
 @mixin backgroundgradient {
-    background-image: linear-gradient(
+  background-image: linear-gradient(
     0deg,
     rgba(147, 86, 220, 0.9),
     rgba(255, 121, 218, 0.9)
   );
 }
-@-webkit-keyframes slide {
-    100% { right: 0; }
-}
 
-@keyframes slide {
-    100% { right: 0; }
-}
+@keyframes menuanim {
+    0% {
+      transform: scale(0)
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

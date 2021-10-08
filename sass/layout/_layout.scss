@@ -104,3 +104,14 @@ footer {
     font-size: 20px;
   }
 }
+.menu__area {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menu_list{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

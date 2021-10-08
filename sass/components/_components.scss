@@ -90,7 +90,7 @@ li {
 }
 
 .restau__card {
-  box-shadow: 0 0 16px #0000002e;
+  box-shadow: 0 0 8px #c2c1c12e;
   border-radius: 1rem;
   background-color: white;
   display: flex;
@@ -118,7 +118,7 @@ li {
   }
   &--heart {
     flex-basis: 10%;
-    padding-top: 0.3rem;
+    padding: 0.3rem 1rem;
 
     & .full {
       display: none;
@@ -157,22 +157,60 @@ li {
   display: flex;
   justify-content: space-between;
   border-radius: 0.75rem;
-  box-shadow: 0.25rem 0.25rem 1rem rgb(88, 88, 88);
+  box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 30%);
   overflow: hidden;
   cursor: pointer;
+  animation: menuanim 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.60, 0.40, 0.90);
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
+
   &:hover {
     & .text__area--side {
       transform: translateX(-100%);
     }
-    & .text__area--check i{
+    & .text__area--check i {
       transform: rotate(-0deg);
       transition-duration: 0.6s;
-
     }
   }
 }
-
+ 
+.slot {
+  
+  &--1{
+    animation-delay: .1s;
+  }
+  &--2{
+    animation-delay: .2s;
+  }
+  &--3{
+    animation-delay: .3s;
+  }
+  &--4{
+    animation-delay: .4s;
+  }
+  &--5{
+    animation-delay: .5s;
+  }
+  &--6{
+    animation-delay: .6s;
+  }
+  &--7{
+    animation-delay: .7s;
+  }
+  &--8{
+    animation-delay: .8s;
+  }
+  &--9{
+    animation-delay: .9s;
+  }
+}
 .text__area {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   &--side {
     display: flex;
     padding-top: 0.6rem;
@@ -185,7 +223,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
   }
   &--check {
     color: #99e2d0;
@@ -195,10 +233,15 @@ li {
     & i {
       padding: 0.2rem;
       transform: rotate(180deg);
-      transition-duration: 0.4s;
+      transition-duration: 0.3s;
     }
   }
   &--price {
     padding: 0rem 1rem;
+    background-color: white;
+    margin: -1.5rem -1rem -1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
