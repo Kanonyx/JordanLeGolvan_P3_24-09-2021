@@ -397,4 +397,10 @@ footer p {
   bottom: 0;
 }
 
+.shop {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */
