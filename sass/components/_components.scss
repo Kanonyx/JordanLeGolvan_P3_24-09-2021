@@ -119,18 +119,22 @@ li {
   &--heart {
     flex-basis: 10%;
     padding: 0.3rem 1rem;
+    transition-duration: 0.9s;
+
 
     & .full {
       display: none;
       font-size: 30px;
+      transition-duration: 0.9s;
+
+      
     }
     & .empty {
       font-size: 30px;
     }
     &:hover {
+      transition-duration: 0.9s;
       cursor: pointer;
-    }
-    &:active {
       & .full {
         display: inherit;
 
@@ -143,11 +147,12 @@ li {
         background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-
       & .empty {
         display: none;
       }
     }
+    
+    
   }
 }
 
