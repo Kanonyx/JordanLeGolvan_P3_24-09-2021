@@ -59,6 +59,10 @@ li {
     display: inline-block;
     position: absolute;
     left: 1rem;
+
+    @media (min-width: 900px) {
+      position: inherit;
+    }
   }
   &:hover {
     cursor: pointer;
@@ -98,6 +102,7 @@ li {
   min-width: 13rem;
   flex-basis: 25%;
   transition-duration: 0.7s;
+  max-width: 100rem;
   &:hover {
     transform: scale(1.02);
   }
@@ -121,13 +126,10 @@ li {
     padding: 0.3rem 1rem;
     transition-duration: 0.9s;
 
-
     & .full {
       display: none;
       font-size: 30px;
       transition-duration: 0.9s;
-
-      
     }
     & .empty {
       font-size: 30px;
@@ -151,8 +153,6 @@ li {
         display: none;
       }
     }
-    
-    
   }
 }
 
@@ -166,7 +166,7 @@ li {
   overflow: hidden;
   cursor: pointer;
   animation: menuanim 0.6s;
-  animation-timing-function: cubic-bezier(0.5, 1.60, 0.40, 0.90);
+  animation-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.9);
   animation-fill-mode: both;
   transform: scale(0);
   max-width: 100%;
@@ -181,35 +181,34 @@ li {
     }
   }
 }
- 
+
 .slot {
-  
-  &--1{
-    animation-delay: .1s;
+  &--1 {
+    animation-delay: 0.1s;
   }
-  &--2{
-    animation-delay: .2s;
+  &--2 {
+    animation-delay: 0.2s;
   }
-  &--3{
-    animation-delay: .3s;
+  &--3 {
+    animation-delay: 0.3s;
   }
-  &--4{
-    animation-delay: .4s;
+  &--4 {
+    animation-delay: 0.4s;
   }
-  &--5{
-    animation-delay: .5s;
+  &--5 {
+    animation-delay: 0.5s;
   }
-  &--6{
-    animation-delay: .6s;
+  &--6 {
+    animation-delay: 0.6s;
   }
-  &--7{
-    animation-delay: .7s;
+  &--7 {
+    animation-delay: 0.7s;
   }
-  &--8{
-    animation-delay: .8s;
+  &--8 {
+    animation-delay: 0.8s;
   }
-  &--9{
-    animation-delay: .9s;
+  &--9 {
+    animation-delay: 0.9s;
   }
 }
 .text__area {

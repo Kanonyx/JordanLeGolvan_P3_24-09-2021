@@ -1,11 +1,3 @@
-@-webkit-keyframes menuanim {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @keyframes menuanim {
   0% {
     transform: scale(0);
@@ -14,32 +6,10 @@
     transform: scale(1);
   }
 }
-@-webkit-keyframes loaderfade {
-  100% {
-    opacity: 0;
-    z-index: -100;
-  }
-}
 @keyframes loaderfade {
   100% {
     opacity: 0;
     z-index: -100;
-  }
-}
-@-webkit-keyframes circle {
-  0% {
-    top: 60px;
-    height: 5px;
-    border-radius: 50px 50px 25px 25px;
-    transform: scaleX(1.7);
-  }
-  40% {
-    height: 20px;
-    border-radius: 50%;
-    transform: scaleX(1);
-  }
-  100% {
-    top: 0%;
   }
 }
 @keyframes circle {
@@ -56,19 +26,6 @@
   }
   100% {
     top: 0%;
-  }
-}
-@-webkit-keyframes shadow {
-  0% {
-    transform: scaleX(1.5);
-  }
-  40% {
-    transform: scaleX(1);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scaleX(0.2);
-    opacity: 0.4;
   }
 }
 @keyframes shadow {
@@ -146,6 +103,11 @@ li::before {
   position: absolute;
   left: 1rem;
 }
+@media (min-width: 900px) {
+  li::before {
+    position: inherit;
+  }
+}
 li:hover {
   cursor: pointer;
   transition-duration: 0.9s;
@@ -171,8 +133,7 @@ li:hover i {
   border: 0 solid transparent;
   border-radius: 1rem 1rem 0 0;
   box-shadow: none;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .restau__card {
@@ -184,6 +145,7 @@ li:hover i {
   min-width: 13rem;
   flex-basis: 25%;
   transition-duration: 0.7s;
+  max-width: 100rem;
 }
 .restau__card:hover {
   transform: scale(1.02);
@@ -191,8 +153,7 @@ li:hover i {
 .restau__card--img img {
   border-radius: 1rem 1rem 0 0;
   height: 12rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -240,12 +201,9 @@ li:hover i {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.3);
   overflow: hidden;
   cursor: pointer;
-  -webkit-animation: menuanim 0.6s;
-          animation: menuanim 0.6s;
-  -webkit-animation-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.9);
-          animation-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.9);
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: menuanim 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.9);
+  animation-fill-mode: both;
   transform: scale(0);
   max-width: 100%;
 }
@@ -258,40 +216,31 @@ li:hover i {
 }
 
 .slot--1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 .slot--2 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 .slot--3 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 .slot--4 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 .slot--5 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 .slot--6 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 .slot--7 {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
 .slot--8 {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 .slot--9 {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  animation-delay: 0.9s;
 }
 
 .text__area {
@@ -334,7 +283,7 @@ li:hover i {
 
 body {
   margin: 0 auto;
-  max-width: 2440px;
+  max-width: 1440px;
   font-family: "roboto", sans-serif;
   scroll-behavior: smooth;
 }
@@ -452,16 +401,13 @@ footer p {
 }
 
 .loader {
-  -webkit-animation: loaderfade 0.9s;
-          animation: loaderfade 0.9s;
+  animation: loaderfade 0.9s;
   position: fixed;
-  -webkit-animation-delay: 1.75s;
-          animation-delay: 1.75s;
+  animation-delay: 1.75s;
   background-color: white;
   width: 100%;
   height: 100%;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-fill-mode: both;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -469,16 +415,13 @@ footer p {
 }
 
 .wrapper {
-  -webkit-animation: loaderfade 0.9s;
-          animation: loaderfade 0.9s;
+  animation: loaderfade 0.9s;
   position: fixed;
-  -webkit-animation-delay: 1.75s;
-          animation-delay: 1.75s;
+  animation-delay: 1.75s;
   background-color: white;
   width: 200px;
   height: 60px;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-fill-mode: both;
   left: 50%;
   top: 40%;
   transform: translate(-50%, -50%);
@@ -492,8 +435,7 @@ footer p {
   border-radius: 50%;
   left: 15%;
   transform-origin: 50%;
-  -webkit-animation: circle 0.5s alternate infinite ease;
-          animation: circle 0.5s alternate infinite ease;
+  animation: circle 0.5s alternate infinite ease;
 }
 .circle.first {
   background-color: #9356DC;
@@ -507,15 +449,13 @@ footer p {
 
 .circle:nth-child(2) {
   left: 45%;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .circle:nth-child(3) {
   left: auto;
   right: 15%;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .shadow {
@@ -528,23 +468,19 @@ footer p {
   transform-origin: 50%;
   z-index: -1;
   left: 15%;
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
-  -webkit-animation: shadow 0.5s alternate infinite ease;
-          animation: shadow 0.5s alternate infinite ease;
+  filter: blur(1px);
+  animation: shadow 0.5s alternate infinite ease;
 }
 
 .shadow:nth-child(4) {
   left: 45%;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .shadow:nth-child(5) {
   left: auto;
   right: 15%;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .wrapper span {
@@ -560,8 +496,7 @@ footer p {
   max-width: 100%;
   max-height: 32rem;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .restau_title {
@@ -603,3 +538,5 @@ footer p {
   justify-content: center;
   padding: 2rem;
 }
+
+/*# sourceMappingURL=style.css.map */
