@@ -283,9 +283,10 @@ li:hover i {
 
 body {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1080px;
   font-family: "roboto", sans-serif;
   scroll-behavior: smooth;
+  box-shadow: 0rem 3rem 3rem rgba(0, 0, 0, 0.4);
 }
 
 a {
